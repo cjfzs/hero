@@ -1,0 +1,7 @@
+<div *ngIf="messageService.messages.length">
+
+  <h2>英雄的意义</h2>
+  <button class="clear" (click)="messageService.clear()">要点</button>
+  <div *ngFor='let message of messageService.messages'> {{message}} </div>
+
+</div>
